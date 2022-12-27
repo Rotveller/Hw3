@@ -3,8 +3,8 @@ public class Main {
         task1 ();
         task2 ();
         task3 ();
-        ///Task4 ();
-        ///Task5 ();
+        task4 ();
+        task5();
         ///Task6 ();
         ///Task7 ();
         ///Task8 ();
@@ -37,7 +37,28 @@ public class Main {
         byte threeClass = 30;
         short totalPaper = 480;
         byte totalStudents = (byte) (oneClass + twoClass + threeClass);
-        float pr1st = totalPaper / totalStudents;
-        System.out.println(pr1st);
+        byte pr1st = (byte) (totalPaper / totalStudents);
+        System.out.println(" На каждого ученика рассчитано " + pr1st + " листов бумаги ");
+    }
+    public static void task4 () {
+        byte mB = 16;
+        short twentyMin = (short) (mB * 20/2);
+        System.out.println(" За 20 минут машина произвела " + twentyMin + " штук бутылок ");
+        short oneDay = 24 * 60 / 2 * 16;
+        System.out.println(" За сутки машина произвела " + oneDay + " штук бутылок ");
+        int threeDays = oneDay * 3;
+        System.out.println(" За 3 дня машина произвела " + oneDay + " штук бутылок ");
+        int thirtyDays = threeDays * 10;
+        System.out.println(" За месяц машина произвела " + threeDays + " штук бутылок ");
+    }
+    public static void task5 () {
+        byte fullSc = 120;
+        byte onePlaceWhite = 2;
+        byte onePlaceBrown = 4;
+        byte howClasR = (byte) (fullSc / (onePlaceWhite+onePlaceBrown));
+        System.out.println(howClasR);
+        byte Color = (byte) (onePlaceWhite * howClasR);
+        byte Color2 = (byte) (onePlaceBrown * howClasR);
+        System.out.println(" В школе, где " + howClasR + " классов нужно " + Color + " Банок белой краски и " + Color2 + " Банок коричневой краски");
     }
 }
